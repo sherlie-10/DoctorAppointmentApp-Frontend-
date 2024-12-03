@@ -1,0 +1,144 @@
+/* General Reset */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color:white; /* Light background for better readability */
+  color: #333;
+}
+
+/* Home Container */
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: white;
+  min-height: 100vh;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #000000; /* Primary color */
+  color: white;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.header span {
+  color: #ffffff; /* Highlighted color for brand name */
+}
+
+.header p {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+/* Form Section */
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.form-container {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-container input {
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.form-container input:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.9rem;
+  margin-bottom: 20px;
+}
+
+.form-container button {
+  padding: 10px 20px;
+  background-color: #000000;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button:hover {
+  background-color: #000000;
+}
+
+/* Info Section (Visible After Login) */
+.info-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f1f1f1;
+}
+
+.info-section h2 {
+  margin-bottom: 10px;
+  color: #28a745; /* Success color */
+}
+
+.info-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.info-section ul li {
+  margin: 10px 0;
+}
+
+.info-section ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.info-section ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 60px;
+  background-color: #000000; /* Dark footer */
+  color: white;
+  font-size: 0.9rem;
+}

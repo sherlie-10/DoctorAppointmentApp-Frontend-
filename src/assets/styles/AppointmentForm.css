@@ -1,0 +1,233 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #ffffff; 
+  color: #000000; 
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Button to toggle form visibility */
+button {
+  display: block;
+  margin: 0px auto;
+  background-color: #000000; 
+  color: #ffffff;
+  padding: 30px 20px;
+  border-color: white;
+  border: 90px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #000000;  /* Lighter orange on hover */
+}
+
+button:disabled {
+  background-color: #444; /* Grey button when disabled */
+  cursor: not-allowed;
+}
+
+/* Form Container */
+.appointment-form {
+  width: 100%;
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #000000; 
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1); /* Softer shadow */
+  backdrop-filter: blur(10px); /* Blurring effect */
+}
+
+.appointment-form h2 {
+  font-size: 28px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #444; /* Thin grey divider */
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Form Fields */
+.appointment-form .form-group {
+  margin-bottom: 20px;
+}
+
+.appointment-form label {
+  font-size: 16px;
+  color: #fff;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 10px 0;
+  background-color: #333; /* Darker input background */
+  color: #fff;
+  border: 1px solid #444; /* Grey border */
+  border-radius: 8px;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.appointment-form input::placeholder,
+.appointment-form textarea::placeholder {
+  color: #777; /* Light grey placeholders */
+}
+
+.appointment-form input:focus,
+.appointment-form select:focus,
+.appointment-form textarea:focus {
+  border-color: #ff5500; /* Highlight with orange color on focus */
+  outline: none;
+}
+
+/* File Input Styling */
+.appointment-form input[type="file"] {
+  padding: 8px;
+  background-color: #444;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+}
+
+.appointment-form input[type="file"]:hover {
+  background-color: #555;
+}
+
+/* Error Message */
+.error-message {
+  color: #ce1e1e;  /* Orange color for error */
+  font-size: 14px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Submit Button */
+.appointment-form button {
+  padding: 14px;
+  background-color: #ce1e1e;  /* Vibrant orange button */
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 6px 15px rgba(255, 85, 0, 0.3); /* Shadow for a glowing effect */
+}
+
+.appointment-form button:hover {
+  background-color: #ce1e1e;  /* Lighter orange on hover */
+  transform: translateY(-3px); /* Lift button on hover */
+  box-shadow: 0 12px 25px rgba(255, 85, 0, 0.4); /* Stronger shadow on hover */
+}
+
+/* File Upload Success */
+.appointment-form .form-group p {
+  color: #ce1e1e; /* Orange color for file upload success message */
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* Footer Text */
+.appointment-form-footer {
+  text-align: center;
+  color: #aaa; /* Lighter grey footer text */
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.appointment-form-footer a {
+  color: #1aafcc; /* Orange color for links */
+  text-decoration: none;
+}
+
+.appointment-form-footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .appointment-form {
+    padding: 20px;
+    margin: 20px;
+  }
+
+  .appointment-form h2 {
+    font-size: 24px;
+  }
+
+  .appointment-form input,
+  .appointment-form select,
+  .appointment-form textarea {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .appointment-form button {
+    padding: 12px;
+    font-size: 16px;
+  }
+}
+
+/* Smooth Scroll Effect */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Form Input Animations */
+.appointment-form input,
+.appointment-form select,
+.appointment-form textarea {
+  transition: all 0.3s ease;
+}
+
+.appointment-form input:focus,
+.appointment-form select:focus,
+.appointment-form textarea:focus {
+  transform: scale(1.02); /* Slight zoom effect on focus */
+}
+
+
+/* Notification styles */
+.notification {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #28a745; /* Green for success */
+  color: white;
+  padding: 15px 20px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 1000;
+  animation: fadeInOut 3s ease-in-out;
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  10%, 90% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

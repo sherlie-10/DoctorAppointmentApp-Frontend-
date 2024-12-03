@@ -1,0 +1,173 @@
+/* General Header Styles */
+.header {
+  background-color: #ffffff;
+  color: #ffffff;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  text-decoration: none;
+}
+
+.nav-link {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #ffffff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Ensure no underline */
+  color: #333; /* Add color for the text beside the logo */
+}
+
+.logo-img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.logo span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333; /* Matches the desired color */
+  text-decoration: none; /* Explicitly removes underline */
+}
+
+.logo span:hover {
+  color: #c11919; /* Optional: Change color on hover */
+}
+
+.emergency-btn {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.emergency-btn:hover {
+  background-color: #c82333;
+}
+
+/* Popup Overlay Styles */
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* Popup Message Styles */
+.popup-message {
+  background: #fff;
+  color: #333;
+  border-radius: 10px;
+  padding: 25px;
+  width: 90%;
+  max-width: 400px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  animation: fadeIn 0.3s ease;
+}
+
+.popup-message h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.popup-message p {
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* Close Button (Inside Popup) */
+.popup-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+}
+
+.popup-close:hover {
+  color: #ff4c4c;
+}
+
+/* Close Button at Bottom */
+.popup-close-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.popup-close-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 576px) {
+  .popup-message {
+    width: 95%;
+    padding: 20px;
+  }
+
+  .popup-message h2 {
+    font-size: 20px;
+  }
+
+  .popup-message p {
+    font-size: 14px;
+  }
+
+  .popup-close-btn {
+    font-size: 14px;
+    padding: 8px 15px;
+  }
+}
